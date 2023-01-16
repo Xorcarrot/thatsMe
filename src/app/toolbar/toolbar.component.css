@@ -13,6 +13,10 @@
     margin-bottom: 20px;
 }
 
+.sideBar {
+    border-right: #d2601a 4px solid;
+}
+
 .navHeader {
     color: white;
 }

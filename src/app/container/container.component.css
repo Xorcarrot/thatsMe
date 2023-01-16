@@ -1,7 +1,7 @@
 .container {
     position: sticky;
-    border-top: solid #1d3c45 5px;
-    border-bottom: solid #1d3c45 5px;
+    border-top: solid #d9783c 5px;
+    border-bottom: solid #d9783c 5px;
     height: 80%;
     background-color: #ffe7cd;
     display: flex;
@@ -17,11 +17,8 @@
 
 .arrow :hover {
     background-color: #d9783c;
-    border-left: #d2601a solid 2px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-top: #d2601a solid 2px;
-    border-bottom: #d2601a solid 2px;
 }
 
 .icon {

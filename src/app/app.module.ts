@@ -11,12 +11,20 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ContainerComponent } from './container/container.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { ThatsMeComponent } from './thats-me/thats-me.component';
+import { ProjectComponent } from './project/project.component';
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    ContainerComponent
+    ContainerComponent,
+    HomepageComponent,
+    ThatsMeComponent,
+    ProjectComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,

@@ -4,9 +4,9 @@
     </button>
 </div>
 
-<mat-sidenav-container *ngIf="navToggle" class="menu"  [hasBackdrop]="true">
-    <mat-sidenav>Start</mat-sidenav>
-    <mat-sidenav-content color="accent">
+<mat-sidenav-container *ngIf="navToggle" class="menu" [hasBackdrop]="true">
+    <mat-sidenav #sideBar></mat-sidenav>
+    <mat-sidenav-content class="sideBar" color="accent">
 
         <div>
             <button class="menuButton" mat-fab color="accent" (click)="toggle()" aria-label="Menü">
