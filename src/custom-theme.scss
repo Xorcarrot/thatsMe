@@ -9,11 +9,77 @@
 // Be sure that you only ever include this mixin once!
 @include mat.core();
 
+$md-graydark: (
+    50 : #e4e8e9,
+    100 : #bbc5c7,
+    200 : #8e9ea2,
+    300 : #61777d,
+    400 : #3f5961,
+    500 : #1d3c45,
+    600 : #1a363e,
+    700 : #152e36,
+    800 : #11272e,
+    900 : #0a1a1f,
+    A100 : #5ed4ff,
+    A200 : #2bc7ff,
+    A400 : #00b5f7,
+    A700 : #00a3de,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #ffffff,
+    )
+);
+
+$md-orangedark: (
+    50 : #faece4,
+    100 : #f2cfba,
+    200 : #e9b08d,
+    300 : #e0905f,
+    400 : #d9783c,
+    500 : #d2601a,
+    600 : #cd5817,
+    700 : #c74e13,
+    800 : #c1440f,
+    900 : #b63308,
+    A100 : #ffe6e0,
+    A200 : #ffbead,
+    A400 : #ff957a,
+    A700 : #ff8061,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$thatsMe-primary: mat.define-palette(mat.$indigo-palette);
-$thatsMe-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$thatsMe-primary: mat.define-palette($md-graydark);
+$thatsMe-accent: mat.define-palette($md-orangedark);
 
 // The warn palette is optional (defaults to red).
 $thatsMe-warn: mat.define-palette(mat.$red-palette);
