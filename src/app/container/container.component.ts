@@ -5,28 +5,7 @@ import { Component, HostListener, Input, OnInit } from '@angular/core';
   selector: 'app-container',
   templateUrl: './container.component.html',
   styleUrls: ['./container.component.css'],
-  animations: [
-    
-    trigger('move', [
-      state('inMiddle', style({
-        opacity: '1',
-    })),
-    transition('* => void', [
-      animate(100, style({
-        opacity: '0',
-      }))
-    ]),
-    transition('void => *', [
-      animate(401),
-      style({
-        opacity: '0',
-        visibility: 'visible'
-      }),
-      animate(200)
-    ]),
-    
-  ]), 
-]
+  animations: []
 
 })
 export class ContainerComponent implements OnInit {
@@ -48,22 +27,16 @@ export class ContainerComponent implements OnInit {
   }
 
   next(): void {
-    if((Date.now() - this.currentTime) > 1000) {
-      this.page++;
-      if(this.page > 3) {
-        this.page = 0;
-      }
-      this.currentTime = Date.now();
+    this.page++;
+    if(this.page > 3) {
+      this.page = 0;
     }
   }
 
   back(): void {
-    if((Date.now() - this.currentTime) > 1000) {
-      this.page--;
-      if(this.page < 0) {
-        this.page = 3;
-      }
-    this.currentTime = Date.now();
+    this.page--;
+    if(this.page < 0) {
+      this.page = 3;
     }
   }
 
