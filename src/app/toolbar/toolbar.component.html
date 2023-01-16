@@ -4,7 +4,7 @@
     </button>
 </div>
 
-<mat-sidenav-container *ngIf="navToggle" class="menu" [hasBackdrop]="true">
+<mat-sidenav-container *ngIf="navToggle" [@sidebarAni] class="menu" [hasBackdrop]="true">
     <mat-sidenav #sideBar></mat-sidenav>
     <mat-sidenav-content class="sideBar" (mouseleave)="toggle()" color="accent">
 
@@ -16,7 +16,7 @@
 
         <div>
             <mat-nav-list>
-                <mat-list-item class="navItem" *ngFor="let item of navList" (click)="choosePage(item.value)" [activated]="page == item.value">
+                <mat-list-item class="navItem" *ngFor="let item of navList" (click)="sendPage(item.value)">
                     <h3 class="navHeader">{{item.name}}</h3>
                     <button mat-icon-button color="accent" matListItemMeta>
                         <mat-icon>{{item.icon}}</mat-icon>

@@ -1,2 +1,2 @@
-<app-toolbar></app-toolbar>
-<app-container></app-container>
+<app-toolbar (pageEvent)="receiveMessage($event)"></app-toolbar>
+<app-container [page]="page"></app-container>

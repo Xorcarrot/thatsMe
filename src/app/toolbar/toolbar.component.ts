@@ -1,16 +1,37 @@
 import { NavigationModule } from './models/navigation/navigation.module';
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-toolbar',
   templateUrl: './toolbar.component.html',
-  styleUrls: ['./toolbar.component.css']
+  styleUrls: ['./toolbar.component.css'],
+  animations: [
+    
+    trigger('sidebarAni', [
+      state('inMiddle', style({
+        transform: 'translateX(0%)',
+    })),
+    transition('* => void', [
+      animate(150, style({
+        transform: 'translateX(-400px)',
+      }))
+    ]),
+    transition('void => *', [
+      style({
+        transform: 'translateX(-400px)',
+      }),
+      animate(150)
+    ])
+  ]),
+]
 })
 export class ToolbarComponent {
 
   navToggle: boolean = false;
   navList: NavigationModule[] = [];
-  page: Number = 0;
+
+  @Output() pageEvent = new EventEmitter<number>();
 
   constructor() {
     this.navList.push(new NavigationModule("Startseite", 0, "home"));
@@ -23,8 +44,8 @@ export class ToolbarComponent {
     this.navToggle = !this.navToggle;
   }
 
-  choosePage(page: Number) {
-    this.page = page;
+  sendPage(page: number): void {
+    this.pageEvent.emit(page);
   }
 
 }

@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'thatsMe';
+  page!: number;
+
+  receiveMessage($event: number) {
+    this.page = $event;
+  }
 }
