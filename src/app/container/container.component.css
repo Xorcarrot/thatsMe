@@ -13,12 +13,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    background-color: #ffe7cd;
+    transition-property: background-color;
+    transition-duration: 0.5s;
 }
 
-.arrow :hover {
-    background-color: #d9783c;
+.left {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.right {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+}
+
+@media only screen and (min-width: 991px) {
+    .arrow:hover {
+        background-color: #d9783c;
+    }
 }
 
 .icon {
@@ -27,8 +41,8 @@
     align-items: center;
 }
 
-.icon :hover {
-    color: #d2601a;
+.icon:hover {
+    color: white;
 }
 
 .iconLeft {

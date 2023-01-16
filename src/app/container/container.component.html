@@ -1,17 +1,17 @@
 <div class="container">
 
-    <div class="arrow">
+    <div class="arrow left">
         <mat-icon class="iconLeft icon" aria-hidden="false" color="primary" (click)="back()" aria-label="Zurück">arrow_forward_ios</mat-icon>
     </div>
 
     <div class="content">
-        <app-homepage *ngIf="page == 0"></app-homepage>
-        <app-thats-me *ngIf="page == 1"></app-thats-me>
-        <app-project *ngIf="page == 2"></app-project>
-        <app-resume *ngIf="page == 3"></app-resume>
+        <app-homepage [@move] *ngIf="page == 0"></app-homepage>
+        <app-thats-me [@move] *ngIf="page == 1"></app-thats-me>
+        <app-project [@move] *ngIf="page == 2"></app-project>
+        <app-resume [@move] *ngIf="page == 3"></app-resume>
     </div>
 
-    <div class="arrow">
+    <div class="arrow right">
         <mat-icon class="iconRight icon" aria-hidden="false" color="primary" (click)="next()" aria-label="Weiter">arrow_forward_ios</mat-icon>
     </div>
 
