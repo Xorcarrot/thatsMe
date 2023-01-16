@@ -23,8 +23,9 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
       }),
       animate(150)
     ])
-  ]),
+  ]), 
 ]
+
 })
 export class ToolbarComponent {
 
@@ -45,6 +46,7 @@ export class ToolbarComponent {
   }
 
   sendPage(page: number): void {
+    this.toggle();
     this.pageEvent.emit(page);
   }
 
