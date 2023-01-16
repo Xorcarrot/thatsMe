@@ -1,0 +1,24 @@
+.menu {
+    position: absolute;
+    background-color: #1d3c45;
+    width: 400px;
+    height: 100%;
+    top: 0;
+}
+
+.menuButton {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.navHeader {
+    color: white;
+}
+
+.navItem {
+    border-top: solid #d2601a 2px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}

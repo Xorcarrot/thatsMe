@@ -1,3 +1,29 @@
-<mat-toolbar color="primary">
-    <span>My Application</span>
-</mat-toolbar>
+<div>
+    <button class="menuButton" mat-fab color="primary" (click)="toggle()" aria-label="Menü">
+        <mat-icon>menu</mat-icon>
+    </button>
+</div>
+
+<mat-sidenav-container *ngIf="navToggle" class="menu"  [hasBackdrop]="true">
+    <mat-sidenav>Start</mat-sidenav>
+    <mat-sidenav-content color="accent">
+
+        <div>
+            <button class="menuButton" mat-fab color="accent" (click)="toggle()" aria-label="Menü">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </div>
+
+        <div>
+            <mat-nav-list>
+                <mat-list-item class="navItem" *ngFor="let item of navList" (click)="choosePage(item.value)" [activated]="page == item.value">
+                    <h3 class="navHeader">{{item.name}}</h3>
+                    <button mat-icon-button color="accent" matListItemMeta>
+                        <mat-icon>{{item.icon}}</mat-icon>
+                    </button>
+                </mat-list-item>
+            </mat-nav-list>  
+        </div>
+
+    </mat-sidenav-content>
+</mat-sidenav-container>
