@@ -1,0 +1,43 @@
+.container {
+    position: sticky;
+    border-top: solid #1d3c45 5px;
+    border-bottom: solid #1d3c45 5px;
+    height: 80%;
+    background-color: #ffe7cd;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow :hover {
+    background-color: #d9783c;
+    border-left: #d2601a solid 2px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top: #d2601a solid 2px;
+    border-bottom: #d2601a solid 2px;
+}
+
+.icon {
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.icon :hover {
+    color: #d2601a;
+}
+
+.iconLeft {
+    transform: rotate(180deg);
+}
+
+.iconRight {
+    
+}

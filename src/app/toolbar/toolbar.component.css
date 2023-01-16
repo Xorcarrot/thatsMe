@@ -1,5 +1,6 @@
+
 .menu {
-    position: absolute;
+    position: fixed;
     background-color: #1d3c45;
     width: 400px;
     height: 100%;
@@ -21,4 +22,8 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.navItem :hover {
+    color: #d2601a;
 }

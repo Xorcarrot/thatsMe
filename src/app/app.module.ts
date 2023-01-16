@@ -10,11 +10,13 @@ import {MatListModule} from '@angular/material/list';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { ContainerComponent } from './container/container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    ContainerComponent
   ],
   imports: [
     BrowserModule,
