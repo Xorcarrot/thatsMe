@@ -18,7 +18,7 @@
             <mat-nav-list>
                 <mat-list-item class="navItem" *ngFor="let item of navList" (click)="sendPage(item.value)">
                     <h3 class="navHeader">{{item.name}}</h3>
-                    <button mat-icon-button color="accent" matListItemMeta>
+                    <button class="icon" mat-icon-button color="accent" matListItemMeta>
                         <mat-icon>{{item.icon}}</mat-icon>
                     </button>
                 </mat-list-item>

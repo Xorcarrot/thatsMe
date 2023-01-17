@@ -1,0 +1,43 @@
+.container {
+
+}
+
+.stepper {
+    background-color: #ffe7cd;
+}
+
+.step {
+    display: flex;
+    justify-content: space-around;
+    border: solid #d9783c 3px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    background-color: rgba(29, 60, 69, 1);
+}
+
+.step span {
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    font-size: smaller;
+}
+
+.step img {
+    height: 90px;
+    width: 90px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid #d9783c 4px
+}
+
+@media screen and (max-width: 480px) {
+    .step img {
+        visibility: collapse;
+    }
+
+    .step span {
+        margin-left: 1px;
+        margin-right: 1px
+    }
+}

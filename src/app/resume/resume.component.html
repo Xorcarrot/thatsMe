@@ -1,3 +1,61 @@
 <div class="container">
-    <p>Lebenslauf</p>
+      
+      <mat-stepper class="stepper" [orientation]="(stepperOrientation | async)!">
+
+        <mat-step label="2004-2012" state="date">
+          
+            <div class="hsMit step">
+                <img src="https://www.nextroom.at/data/media/med_media/preview/1314868815.jpg" alt="Mittelschule Mittersill">
+                <span><strong>2004 bis 2008</strong><br/>Besuch der allgemein bildenden MS Mittersill.</span>
+            </div>
+
+            <div class="htlSaa">
+
+            </div>
+            <div class="edCa">
+
+            </div>
+            <div class="scCa">
+
+            </div>
+
+
+        </mat-step>
+
+        <mat-step label="2000" state="date">
+          
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+
+        </mat-step>
+
+        <mat-step label="3000" state="date">
+
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+          </div>
+
+        </mat-step>
+
+        <mat-step label="2004 - 2008" state="date">
+
+
+
+        </mat-step>
+
+        <mat-step label="2004 - 2008" state="date">
+
+
+
+        </mat-step>
+
+        <!-- Icon overrides -->
+        <ng-template matStepperIcon="date">
+            <mat-icon>date_range</mat-icon>
+        </ng-template>
+
+      </mat-stepper>
+      
 </div>

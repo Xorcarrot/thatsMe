@@ -31,3 +31,9 @@
 .navItem :hover {
     color: #d2601a;
 }
+
+@media screen and (max-width: 320px) {
+    .icon {
+        visibility: hidden;
+    }
+}
