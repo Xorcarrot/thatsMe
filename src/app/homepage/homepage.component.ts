@@ -34,6 +34,8 @@ export class HomepageComponent implements OnInit {
   welcomeText: string = '';
   indexText: number = 0;
 
+  cols: number = 2;
+
   constructor() {
     this.startTexts.push("Developer in Ausbildung");
     this.startTexts.push("Hey, Wilkommen bei mir!");
@@ -45,6 +47,7 @@ export class HomepageComponent implements OnInit {
     setInterval(() => {
       this.switchingText();
     }, 5000);
+    this.cols = (window.innerWidth <= 480) ? 1 : 2;
   }
 
   switchingText(): void {
@@ -54,6 +57,10 @@ export class HomepageComponent implements OnInit {
     } else {
       this.indexText++;
     }
+  }
+
+  handleSize(event: any) {
+    this.cols = (event.target.innerWidth <= 480) ? 1 : 2;
   }
 
 }

@@ -13,6 +13,9 @@
     padding: 10px 0px;
     border-radius: 10px;
     background-color: rgba(29, 60, 69, 1);
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .step span {
@@ -20,7 +23,8 @@
     margin-top: auto;
     margin-bottom: auto;
     color: white;
-    font-size: smaller;
+    max-width: 800px;
+    text-align: center;
 }
 
 .step img {
@@ -32,12 +36,18 @@
 }
 
 @media screen and (max-width: 480px) {
+    .step {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
     .step img {
         visibility: collapse;
     }
 
     .step span {
         margin-left: 1px;
-        margin-right: 1px
+        margin-right: 1px;
+        font-size: smaller;
     }
 }

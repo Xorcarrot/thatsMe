@@ -1,3 +1,15 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container span {
+    font-size: 25px;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+}
 
 .menu {
     position: fixed;
@@ -30,6 +42,24 @@
 
 .navItem :hover {
     color: #d2601a;
+}
+
+@media screen and (max-width: 900px) {
+    .container span {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container span {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container span {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 320px) {

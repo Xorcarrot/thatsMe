@@ -2,14 +2,13 @@
     position: sticky;
     border-top: solid #d9783c 5px;
     border-bottom: solid #d9783c 5px;
-    height: 80%;
     background-color: #ffe7cd;
     display: flex;
     justify-content: space-between;
 }
 
 .arrow {
-    height: 100%;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +16,11 @@
     background-color: #ffe7cd;
     transition-property: background-color;
     transition-duration: 0.5s;
+}
+
+.content {
+    width: 90%;
+    height: auto;
 }
 
 .left {

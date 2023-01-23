@@ -1,24 +1,60 @@
-.container {
-
-}
-
-.textContainer {
-
-}
-
-.textContainer h1 {
-    left: 100px;
-    top: 100px;
+h1 {
+    left: 200px;
+    bottom: 100px;
     color: #d9783c;
     position: absolute;
     font-family: 'Major Mono Display', monospace;
     font-size: 60px;
+    z-index: 1;
 }
 
-@media  screen and (max-width:769px) {
-    .textContainer h1 {
-        left: 25px;
-        font-size: 25px;
-        text-align: center;
+.me {
+    height: 80%;
+    margin-top: auto;
+}
+
+.overview {
+    font-size: 20px;
+    color: black;
+    font-family: 'Major Mono Display', monospace;
+}
+
+@media screen and (max-width: 1500px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 30px;
+        bottom: 0;
+    }
+
+    .overview {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        left: 30px;
+    }
+
+    .overview {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        left: auto;
+        right: auto;
     }
 }

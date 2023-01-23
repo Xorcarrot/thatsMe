@@ -13,15 +13,6 @@ export class ContainerComponent implements OnInit {
   @Input() page: number = 0;
   currentTime = Date.now();
 
-  @HostListener('wheel', ['$event'])
-  onMouseWheel(event: WheelEvent) {
-    if(event.deltaY > 0) {
-      this.back();
-    } else {
-      this.next();
-    }
-  }
-
   ngOnInit(): void {
     this.page = 0;
   }

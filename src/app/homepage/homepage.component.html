@@ -1,7 +1,14 @@
-<div class="container">
-    <div class="textContainer">
+<mat-grid-list class="container" [cols]="cols" rowHeight="2:1" (window:resize)="handleSize($event)">
+    <mat-grid-tile class="tile">
         <h1 [@textswithing] *ngIf="welcomeText == startTexts[0]">{{welcomeText}}</h1>
         <h1 [@textswithing] *ngIf="welcomeText == startTexts[1]">{{welcomeText}}</h1>
         <h1 [@textswithing] *ngIf="welcomeText == startTexts[2]">{{welcomeText}}</h1>
-    </div>
-</div>
+    </mat-grid-tile>
+    <mat-grid-tile [rowspan]="2">
+        <img class="me" src="assets/images/ich.png" alt="Das bin ich.">
+    </mat-grid-tile>  
+    <mat-grid-tile *ngIf="cols == 2">
+        <span class="overview">Meine Kentnisse sind <b>Angular</b>, <b>Spring</b> und <br/>alle Sprachen die für die Frameworks nötig sind.</span>
+    </mat-grid-tile> 
+</mat-grid-list>
+    
