@@ -10,9 +10,17 @@
 .image {
     height: 100px;
     width: auto;
+    margin: auto;
 }
 
 .skills {
     background-color: #1d3c45;
     display: flex;
+    padding: 10px 20px;
+    border: #d9783c solid 4px;
+    border-radius: 5px;
+}
+
+.skills li {
+    color: white;
 }
