@@ -1,3 +1,40 @@
-<div class="container">
-    <p>Über mich</p>
-</div>
+<mat-grid-list class="container" [cols]="4" rowHeight="2:1.4">
+    <mat-grid-tile [colspan]="2" [rowspan]="3">
+        <img class="laptop" src="assets/images/laptop.png" alt="Das bin ich.">
+    </mat-grid-tile>  
+    <mat-grid-tile class="tile" [colspan]="2" [rowspan]="2">
+        <span><b>Hallo</b>, <br/>Willkommen auf meiner Website, zumindest meinem besten Versuch eine zu erstellen.
+        Ich bin gerade dabei mir möglichst viele Kenntnisse im Webdevelopment anzueignen, um immer besser zu werden. Als eigenes
+        Projekt zum lernen habe ich mich für das Erstellen eines online Lebenslauf entschieden. Aber diese soll nur der
+        Startschuss für viele weiter Websites sein.<br/>Kurz zu meiner Persönlichkeit. Ich bin 29 Jahre jung, arbeite seit meinem 15ten
+        Lebensjahr in der Seilbahnbranche, bin verheiratet und liebender Vater. Für das Studium habe ich mich mit 27 Jahren entschieden,
+        weil ich mich in eine neue Thematik reinfuchsen wollte, die mich seit meinem ersten Computer interessiert. "Wie funktioniert 
+        der eigentlich und wie kann ich darauf was selber machen." Dafür lerne ich jeden Tag oder besser gesagt jede Nacht. Mit 
+        Vollzeitbeschäftigung und Kindern ist es nicht mehr so einfach, sich eine ruhige Zeit zum lernen zu nehmen.<br/>Zu meinen
+        Hobbies gehört alles das mit Kindern vereinbar ist. Wie zum Beispiel Skifahren, Ausflüge in die Berge oder einfach zum 
+        zum Spielplatz spazieren und dort meinen Kindern zusehen während ich im Lernskript versinke.<br/>Ich hoffe ich konnte dir 
+        einen kurzen und guten Überblick über meinen Alltag geben und ich würde mich sehr freuen wenn ein Kontakt zustande käme.
+        Ob zum Fachsimpeln oder für ein konkretes Angebot.</span>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div class="skills">
+            <img class="angular image" src="assets/images/angular.png" alt="Angular Logo">
+            <ul>
+                <li>Angular</li>
+                <li>Typescript</li>
+                <li>Javascript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </div>
+    </mat-grid-tile> 
+    <mat-grid-tile class="skills">
+        <img class="spring image" src="assets/images/spring.png" alt="Spring Logo">
+        <ul>
+            <li>Spring/Spring Boot</li>
+            <li>Hibernate</li>
+            <li>PostgreSQL</li>
+            <li>Git</li>
+        </ul>
+    </mat-grid-tile> 
+</mat-grid-list>

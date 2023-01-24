@@ -1,0 +1,18 @@
+.laptop {
+    height: 100%;
+    width: auto;
+}
+
+.subContainer {
+    height: 90%;
+}
+
+.image {
+    height: 100px;
+    width: auto;
+}
+
+.skills {
+    background-color: #1d3c45;
+    display: flex;
+}
