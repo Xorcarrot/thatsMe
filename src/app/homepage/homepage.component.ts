@@ -37,8 +37,8 @@ export class HomepageComponent implements OnInit {
   cols: number = 2;
 
   constructor() {
-    this.startTexts.push("Developer in Ausbildung");
-    this.startTexts.push("Hey, Wilkommen bei mir!");
+    this.startTexts.push("Web-Developer in Ausbildung");
+    this.startTexts.push("Herzlich willkommen!");
     this.startTexts.push("Patrick Pußwald");
   }
 
