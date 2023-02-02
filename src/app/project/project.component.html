@@ -1,3 +1,23 @@
-<div class="container">
-    <p>Projekt</p>
-</div>
+<mat-grid-list [cols]="cols" [rowHeight]="format" (window:resize)="handleSize($event)">
+    <mat-grid-tile class="project" *ngFor="let project of projects">
+        <div class="container">
+            <span>
+                <h1>{{project.name}}</h1>
+                {{project.comment}}<br/><br/>
+                <div class="buttons">
+                <form [action]="project.url" method="get" target="_blank" *ngIf="project.url != ''">
+                    <button mat-raised-button color="accent" type="submit">Website
+                        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="link"></mat-icon>
+                    </button>
+                 </form>
+                 <form [action]="project.gitHub" method="get" target="_blank">
+                    <button mat-raised-button color="accent" type="submit">GitHub
+                        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="rocket_launch"></mat-icon>
+                    </button>
+                 </form>
+                </div>
+            </span>
+        </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+  
