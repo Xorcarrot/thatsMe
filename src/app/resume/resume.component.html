@@ -1,25 +1,25 @@
-<div class="container">
+<div class="container" (window:resize)="handleSize($event)">
       
       <mat-stepper class="stepper" [orientation]="(stepperOrientation | async)!">
 
         <mat-step label="2004-2012" state="date">
           
             <div class="hsMit step">
-                <img src="https://www.nextroom.at/data/media/med_media/preview/1314868815.jpg" alt="Mittelschule Mittersill">
+                <img *ngIf="show" src="https://www.nextroom.at/data/media/med_media/preview/1314868815.jpg" alt="Mittelschule Mittersill">
                 <span><strong>2004 bis 2008</strong><br/>MS Mittersill</span>
             </div>
 
             <div class="htlSaa step">
                 <span><strong>2008 bis 2009</strong><br/>HTL Saalfelden im Bereich Bautechnik</span>
-                <img src="https://media04.meinbezirk.at/article/2017/11/30/3/11396133_L.jpg?1560107534" alt="HTL Saalfelden">
+                <img *ngIf="show" src="https://media04.meinbezirk.at/article/2017/11/30/3/11396133_L.jpg?1560107534" alt="HTL Saalfelden">
             </div>
             <div class="edCa step">
-                <img src="https://www.alpintreff.de/Bilder/poi/678/jufenbahn-8er-sessel-kitzski-winter-c-leitner-ropeways.jpg" alt="Lehre Seilbahntechniker">
+                <img *ngIf="show" src="https://www.alpintreff.de/Bilder/poi/678/jufenbahn-8er-sessel-kitzski-winter-c-leitner-ropeways.jpg" alt="Lehre Seilbahntechniker">
                 <span><strong>2009 bis 2012</strong><br/>Lehre zum Seilbahntechniker bei der Bergbahn AG Kitzbühel</span>
             </div>
             <div class="scCa step">
                 <span><strong>2009 bis 2012</strong><br/>Im Zuge der Lehre, Besuch der Landesberufsschule Hallein Tec-Point</span>
-                <img src="https://www.salzburgerland.com/de/magazin/wp-content/uploads/2013/07/h26fXIII0221.jpg" alt="Tec-Point">
+                <img *ngIf="show" src="https://www.salzburgerland.com/de/magazin/wp-content/uploads/2013/07/h26fXIII0221.jpg" alt="Tec-Point">
             </div>
 
 

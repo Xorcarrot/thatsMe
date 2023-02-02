@@ -1,7 +1,3 @@
-.container {
-
-}
-
 .stepper {
     background-color: #ffe7cd;
 }
@@ -39,10 +35,7 @@
     .step {
         padding-left: 3px;
         padding-right: 3px;
-    }
-
-    .step img {
-        visibility: collapse;
+        padding-bottom: 5px;
     }
 
     .step span {
