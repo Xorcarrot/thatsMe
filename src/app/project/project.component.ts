@@ -14,8 +14,8 @@ export class ProjectComponent implements OnInit {
 
   constructor() {
     this.projects.push(new Project("Mitify", "Ticketsystem für Fehlermeldungen. Projekt ist derzeit in Arbeit.", "https://xorcarrot.github.io/mitify/", "https://github.com/Xorcarrot/mitify"));
-    this.projects.push(new Project("Fallstudie", "Kurierdienstverwaltung zum tracken von Packeten und deren Status.", "", "https://github.com/Xorcarrot/fallstudie_IPWA02"));
-    this.projects.push(new Project("Playground", "Mein Bereich mit dem ich Frontendentwicklung lerne. Nur Desktop!", "", "https://github.com/Xorcarrot/lerningAngular"));
+    this.projects.push(new Project("Fallstudie", "Kurierdienstverwaltung zum tracken von Paketen und deren Status.", "", "https://github.com/Xorcarrot/fallstudie_IPWA02"));
+    this.projects.push(new Project("Playground", "Mein Bereich mit dem ich Frontenddevelopment lerne. Nur Desktop!", "", "https://github.com/Xorcarrot/lerningAngular"));
     this.projects.push(new Project("Tic Tac Toe", "Im Zuge dieser Übung habe ich mich mit Java auseinandergesetzt.", "", "https://github.com/Xorcarrot/TicTacToe"));
   }
 
