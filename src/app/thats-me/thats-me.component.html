@@ -1,10 +1,9 @@
-<mat-grid-list class="container" [cols]="4" rowHeight="2:1.4">
-    <mat-grid-tile [colspan]="2" [rowspan]="3">
+<mat-grid-list class="container" [cols]="cols" rowHeight="2:1.4" (window:resize)="handleSize($event)">
+    <mat-grid-tile class="imgContainer" [colspan]="tile" [rowspan]="imgRow">
         <img class="laptop" src="assets/images/laptop.png" alt="Das bin ich.">
     </mat-grid-tile>  
-    <mat-grid-tile class="tile" [colspan]="2" [rowspan]="2">^
-        <h1>Über mich</h1>
-        <span>Ich bin 29 Jahre alt, verheiratet und glücklicher Familienvater. Seit 14 Jahren bin ich in der Seilbahnbranche tätig.<br/> 
+    <mat-grid-tile class="tile" [colspan]="tile" [rowspan]="row">
+        <span><h1>Über mich</h1>Ich bin 29 Jahre alt, verheiratet und glücklicher Familienvater. Seit 14 Jahren bin ich in der Seilbahnbranche tätig.
         2021 hab ich berufsbegleitend mit dem Informatikstudium an der IU begonnen.
         </span>
     </mat-grid-tile>
@@ -24,7 +23,7 @@
         <div class="skills">
             <img class="spring image" src="assets/images/spring.png" alt="Spring Logo">
             <ul>
-                <li>Spring</li>
+                <li>Java</li>
                 <li>Spring Boot</li>
                 <li>Hibernate</li>
                 <li>PostgreSQL</li>

@@ -3,6 +3,18 @@
     width: auto;
 }
 
+.tile {
+    font-family: 'Major Mono Display', monospace;
+}
+
+.tile h1 {
+    font-family: 'Major Mono Display', monospace;
+}
+
+.tile span {
+    font-size: 20px;
+}
+
 .subContainer {
     height: 90%;
 }
@@ -23,4 +35,54 @@
 
 .skills li {
     color: white;
+}
+
+@media screen and (max-width: 1180px) {
+    .image {
+        height: 70px;
+    }
+
+    .skills {
+        padding: 5px 10px;
+    }
+
+    .skills li {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .image {
+        height: 40px;
+    }
+
+    .tile span {
+        font-size: 15px;
+    }
+
+    .skills {
+        padding: 1px 2px;
+    }
+
+    .skills li {
+        font-size: smaller;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .imgContainer {
+       border-bottom: #1d3c45 solid 3px;
+    }
+
+    .image {
+        height: 100px;
+    }
+
+    .skills {
+        padding: 10px 20px;
+    }
+
+    .skills li {
+        font-size: medium;
+    }
 }
